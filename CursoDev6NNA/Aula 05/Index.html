@@ -8,41 +8,21 @@
 
 <title>AULA 05</title>
 
-<script>
+<script >
 
-var preco = 10;
-var saldo = 50;
-
-if(preco >= saldo){
-	console.log("Saldo Insuficiente")
-} else{
-	console.log("Compra Efetuada!")
+function aviso(){
+	document.getElementById("nome").innerHTML = "Daniel Hass";
 }
 
-for(var i=0; i<3; i++){
-	
-	console.log(i);
-}
-
-function getNome(nome, sobrenome){
-	return nome + sobrenome;
-}
-
-function getNome(nome, sobrenome){
-	return nome + sobrenome
-}
-
-function saudacao(funcao){
-	return "Olá " + funcao("Daniel ", "Hass");
-
-}
-
-console.log(saudacao(getNome));
 
 </script>
+
 </head>
 
 <body>
+
+<input type="button" value="Mostrar Alerta" onclick="aviso()">
+<p id = "nome"></p>
 
 </body>
 </html>

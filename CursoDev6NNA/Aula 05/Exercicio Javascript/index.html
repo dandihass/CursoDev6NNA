@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<link href="estilo.css" rel="stylesheet">
+<meta charset="ISO-8859-1">
+
+<title>AULA 05</title>
+
+<script>
+	function somar() {
+
+		var n1 = parseFloat(document.getElementById('primeiroNumero').value);
+		var n2 = parseFloat(document.getElementById('segundoNumero').value);
+
+		document.getElementById('resultado').innerHTML = n1 + n2;
+	}
+
+	function subtrair() {
+		var n1 = parseFloat(document.getElementById('primeiroNumero').value);
+		var n2 = parseFloat(document.getElementById('segundoNumero').value);
+
+		document.getElementById('resultado').innerHTML = n1 - n2;
+	}
+
+	function dividir() {
+		var n1 = parseFloat(document.getElementById('primeiroNumero').value);
+		var n2 = parseFloat(document.getElementById('segundoNumero').value);
+
+		document.getElementById('resultado').innerHTML = n1 / n2;
+	}
+
+	function multiplicar() {
+		var n1 = parseFloat(document.getElementById('primeiroNumero').value);
+		var n2 = parseFloat(document.getElementById('segundoNumero').value);
+
+		document.getElementById('resultado').innerHTML = n1 * n2;
+
+	}
+</script>
+
+</head>
+
+<body>
+
+	<input id="primeiroNumero" type="number">
+
+	<input id="segundoNumero" type="number">
+
+	<div>
+
+		<input id="botaoSoma" value="+" onclick="somar()" type="button">
+		<input id="botaoSubtracao" value="-" onclick="subtrair()"
+			type="button"> <input id="botaoMultiplicacao" value="/"
+			onclick="dividir()" type="button"> <input id="botaoDivisao"
+			value="x" onclick="multiplicar()" type="button">
+
+
+	</div>
+
+
+	<div id="resultado"></div>
+
+</body>
+</html>
