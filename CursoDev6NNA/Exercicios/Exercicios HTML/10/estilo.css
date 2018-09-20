@@ -1,0 +1,17 @@
+table tr td, th{
+	
+	border: solid 1px black;
+	font-size: 16pt;
+	font-family: Tahoma;
+	
+}
+
+h3 {
+	color: red;
+}
+th{
+	color: blue;
+}
+body {
+	background-color: #f1f1f1;
+}
