@@ -1,0 +1,39 @@
+body{
+	
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+
+}
+
+input {
+	
+    width: 21%;
+    
+    margin-top: 2%;
+
+}
+
+#botaoSoma {
+	
+	width: 5%;
+	background-color: aqua;
+}
+
+#botaoSubtracao {
+	
+	width: 5%;
+	background-color: aqua;
+}
+
+#botaoMultiplicacao {
+	
+	width: 5%;
+	background-color: aqua;
+}
+
+#botaoDivisao {
+	
+	width: 5%;
+	background-color: aqua;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Formulário de cálculo de área de um triângulo</title>
+</head>
+<body>
+
+<div style="display: flex;">
+
+<div style="margin-right: 100px;">
+<form>
+<img alt="" src="Imagens/download.png" style="width:200px;height:200px;">
+<br>
+Base:
+<input type="text" name="base" /><p/>
+
+Altura:
+<input type="text" name="altura" /><p/>
+<input type="button" value="Calcular" onClick="calculaTriangulo(this.form)" />
+<input type="reset" value="Limpar" /><p/>
+
+Resultado: 
+<output name="resultado"></output>
+</form>
+</div>
+
+<form>
+<img alt="" src="Imagens/images.png" style="width:200px;height:200px;">
+<br>
+Base:
+<input type="text" name="base" /><p/>
+
+Altura:
+<input type="text" name="altura" /><p/>
+<input type="button" value="Calcular" onClick="calculaQuadrado(this.form)" />
+<input type="reset" value="Limpar" /><p/>
+
+Resultado: 
+<output name="resultado"></output>
+</form>
+
+</div>
+
+</body>
+
+<script>
+function calculaTriangulo(form) {
+var area = (eval(form.base.value*form.altura.value))/2;
+form.resultado.value = area;
+}
+function calculaQuadrado(form) {
+	var area = (eval(form.base.value*form.altura.value));
+	form.resultado.value = area;
+	}
+</script>
+
+</html>
