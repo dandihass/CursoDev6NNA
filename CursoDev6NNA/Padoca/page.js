@@ -31,7 +31,7 @@ function AdicionarCarrinho() {
 		
 	})
 	
-	$('#subtotal').html(total);
+	$('#subtotal').html('R$'+total+',00');
 
 }
 function Unitario() {
@@ -52,8 +52,10 @@ function Unitario() {
 		document.getElementById('precoUnitario').innerHTML = ('R$4,00');
 	}
 
-	function LimparCarrinho() {
-
-	}
+}
+function LimparCarrinho() {
+	
+	$("#tabela tr").remove();
+	$('#subtotal').html('');
 
 }
